@@ -1,6 +1,7 @@
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
+import heroImage from "@/assets/hero-watch.jpg";
 
 const HeroSection = () => {
   const containerRef = useRef<HTMLDivElement>(null);
@@ -23,6 +24,7 @@ const HeroSection = () => {
           loop
           muted
           playsInline
+          poster={heroImage}
           className="w-full h-full object-cover opacity-60"
         >
           <source src="/hero-watch.mp4" type="video/mp4" />
