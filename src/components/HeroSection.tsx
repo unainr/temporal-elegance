@@ -18,14 +18,16 @@ const HeroSection = () => {
   return (
     <section ref={containerRef} className="relative h-screen flex items-center justify-center overflow-hidden">
       <div className="absolute inset-0">
-        <img
-          src={heroImage}
-          alt="Luxury mechanical watch movement"
-          width={1920}
-          height={1080}
-          className="w-full h-full object-cover opacity-50"
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-background/60 via-background/40 to-background" />
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="w-full h-full object-cover opacity-60"
+        >
+          <source src="/hero-watch.mp4" type="video/mp4" />
+        </video>
+        <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-background/30 to-background" />
       </div>
 
       <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
