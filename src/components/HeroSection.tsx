@@ -1,7 +1,6 @@
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import heroImage from "@/assets/hero-watch.jpg";
 
 const HeroSection = () => {
   const containerRef = useRef<HTMLDivElement>(null);
