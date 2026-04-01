@@ -56,8 +56,8 @@ export const HeroVideo: React.FC = () => {
     const x = startX + Math.sin(frame * 0.02 + i) * 30;
     const opacity = interpolate(
       y,
-      [1100, 800, 400, 0],
-      [0, 0.6, 0.4, 0],
+      [0, 400, 800, 1100],
+      [0, 0.4, 0.6, 0],
       { extrapolateLeft: "clamp", extrapolateRight: "clamp" }
     );
     const size = 1.5 + (i % 3) * 1;
