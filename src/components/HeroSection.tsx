@@ -24,6 +24,7 @@ const HeroSection = () => {
           loop
           muted
           playsInline
+          poster={heroImage}
           className="w-full h-full object-cover opacity-60"
         >
           <source src="/hero-watch.mp4" type="video/mp4" />
